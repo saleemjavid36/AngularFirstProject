@@ -3,11 +3,13 @@
         <div class="navbar-header">
             <a href="#" class="navbar-brand">Recipe Book</a>
         </div>
-        <div class="collapse navbar-collapse">
+
+        <div >
             <ul class="nav navbar-nav">
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Shoping List</a></li>
+                <li><a href="#" (click)="onSelect('recipe')">Recipes</a></li>
+                <li><a href="#"  (click)="onSelect('shopping-list')" >Shoping List</a></li>
             </ul>
+            
             <ul class="nav navbar-nav navbar-right">
                 <a href="#" class="dropdown-toggle" role="button">Manager <span class="caret"></span></a>
                 <li class="dropdown">
@@ -21,16 +23,3 @@
     </div>
 </nav>
 
-<!-- <div class="navbar-header">
-    <a routerLink="/" class="navbar-brand">Recipe Book</a>
-  </div>
-  <div class="collapse navbar-collapse">
-  with these lines:
-  
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
-      <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
-    </button>
-    <a routerLink="/" class="navbar-brand">Recipe Book</a>
-  </div>
-  <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true"> -->
